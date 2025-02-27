@@ -2,8 +2,9 @@
 steps:
   - name: ghcr.io/astral-sh/uv:latest
     args: 
-      - "run"
-      - "/workspace/dag_cannon.py"
+      - uv
+      - run
+      - dag_cannon.py
     env:
       - COMPOSER_BUCKET_NAME=_COMPOSER_BUCKET_NAME
 
