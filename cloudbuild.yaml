@@ -1,6 +1,6 @@
 # Cloud Build configuration file for running dag_cannon using astral uv
 steps:
-  - name: ghcr.io/astral-sh/uv:alpine
+  - name: ghcr.io/astral-sh/uv:python3.12-alpine
     args: 
       - run
       - dag_cannon.py
