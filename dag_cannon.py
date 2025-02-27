@@ -133,6 +133,7 @@ with models.DAG(
         print(f"Error writing to GCS: {e}")
 
 COMPOSER_BUCKET_NAME = os.environ.get("COMPOSER_BUCKET_NAME")
+print(f"COMPOSER_BUCKET_NAME: {COMPOSER_BUCKET_NAME}")
 
 if __name__ == '__main__':
     with multiprocessing.Pool(processes=10) as pool:
