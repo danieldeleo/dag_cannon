@@ -10,3 +10,6 @@ steps:
 
 substitutions:
   _COMPOSER_BUCKET_NAME: us-central1-composer3-003baa97-bucket
+
+options:
+  machineType: 'e2-highcpu-32'
