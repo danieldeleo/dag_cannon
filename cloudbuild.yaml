@@ -5,7 +5,6 @@ steps:
       - run
       - dag_cannon.py
     dir: /workspace
-    entrypoint: uv
     env:
       - COMPOSER_BUCKET_NAME=_COMPOSER_BUCKET_NAME
 
