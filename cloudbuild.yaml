@@ -6,7 +6,7 @@ steps:
       - run
       - dag_cannon.py
     env:
-      - COMPOSER_BUCKET_NAME=_COMPOSER_BUCKET_NAME
+      - COMPOSER_BUCKET_NAME=$_COMPOSER_BUCKET_NAME
 
 substitutions:
   _COMPOSER_BUCKET_NAME: us-central1-composer3-003baa97-bucket
