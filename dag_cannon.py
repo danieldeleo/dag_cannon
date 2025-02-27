@@ -7,10 +7,10 @@ def write_bad_dags(i):
     content = f"""
 import datetime
 
-mport airflow
-rom airflow import models
+import airflow
+from airflow import models
 from airflow.providers.cncf.kubernetes.operators.kubernetes_pod import KubernetesPodOperator
-rom kubernetes.client import models as k8s
+from kubernetes.client import models as k8s
 
 with models.DAG(
     dag_id="bad{i}",
@@ -132,7 +132,7 @@ with models.DAG(
     except Exception as e:
         print(f"Error writing to GCS: {e}")
 
-COMPOSER_BUCKET_NAME = os.environ.get("_COMPOSER_BUCKET_NAME")
+COMPOSER_BUCKET_NAME = os.environ.get("COMPOSER_BUCKET_NAME")
 
 if __name__ == '__main__':
     with multiprocessing.Pool(processes=10) as pool:
