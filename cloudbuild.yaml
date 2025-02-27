@@ -1,0 +1,11 @@
+# Cloud Build configuration file for running dag_cannon using astral uv
+steps:
+  - name: ghcr.io/astral-sh/uv:latest
+    args: 
+      - "run"
+      - "dag_cannon.py"
+    env:
+      - COMPOSER_BUCKET_NAME=_COMPOSER_BUCKET_NAME
+
+substitutions:
+  _COMPOSER_BUCKET_NAME: us-central1-composer3-003baa97-bucket

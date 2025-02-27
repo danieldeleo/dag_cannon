@@ -1,0 +1,9 @@
+[project]
+name = "dag_cannon"
+version = "0.1.0"
+description = "Blasts Composer with many DAGs all at once"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-cloud-storage>=3.0.0",
+]
