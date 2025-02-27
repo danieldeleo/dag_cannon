@@ -5,6 +5,7 @@ steps:
       - run
       - dag_cannon.py
     dir: /workspace
+    entrypoint: ""
     env:
       - COMPOSER_BUCKET_NAME=_COMPOSER_BUCKET_NAME
 
