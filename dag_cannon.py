@@ -138,5 +138,5 @@ print(f"COMPOSER_BUCKET_NAME: {COMPOSER_BUCKET_NAME}")
 if __name__ == '__main__':
     with multiprocessing.Pool(processes=10) as pool:
         pool.map(write_good_dags, range(3000))
-        pool.map(write_bad_dags, range(4000))
+        # pool.map(write_bad_dags, range(4000))
     print("Done blasting DAGs into Composer!")
